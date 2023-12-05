@@ -1,0 +1,19 @@
+---
+title: "Analysis of Weather"
+author: "Kaylin McLiverty"
+date: '`r Sys.Date()`'
+output: pdf_document
+---
+
+Rmarkdown file of my first analysis to plot Flagstaff_Weather data frame
+
+```{r}
+library(McLivertyChapter16)
+library(ggplot2)
+```
+
+```{r}
+ggplot(Flagstaff_Weather, aes(x=Date, y=SNOW)) +
+  geom_line()
+```
+
